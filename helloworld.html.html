@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+      /* 全局样式 */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+      }
+
+      /* 顶部区域 */
+      .header {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .header img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: transform 0.3s ease; /* 动画效果 */
+      }
+
+      .header img:hover {
+        transform: scale(1.1); /* 图片放大 */
+      }
+
+      /* 主要内容 */
+      .main-content {
+        max-width: 760px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px; /* 边框圆角 */
+      }
+
+      /* 底部区域 */
+      .footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      }
+
+      .footer a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* 按钮样式 */
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* 添加平滑滚动效果 */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 头部区域 -->
+    <div class="header">
+      <img src="https://th.bing.com/th/id/OIP.lcRL1JxQG4iDCDndo9STIwAAAA?rs=1&pid=ImgDetMain" alt="陈平安" onclick="showMessage()">
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="main-content">
+      <h1>欢迎来到我的网站</h1>
+      <p>这里是我分享个人网站的地方。</p>
+      <p>这里会有关于我的一些信息。</p>
+      <p>如果你对我的网站有任何建议，请联系我！</p>
+      <button class="btn" onclick="showAlert()">点击显示欢迎信息</button>
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="footer">
+      <p>我网站的内容</p>
+      <a href="file:///C:/Users/27224/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/runoob-test.html">友情连接</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // 显示图片点击消息
+      function showMessage() {
+        alert('你好，欢迎来到我的网站！');
+      }
+
+      // 显示欢迎信息的弹窗
+      function showAlert() {
+        alert('欢迎来到我的个人网站！');
+      }
+    </script>
+  </body>
+</html>
